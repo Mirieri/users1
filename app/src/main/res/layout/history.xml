@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_grey_line_rounded"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/lite_listrow_map"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        map:liteMode="true"
+
+        map:mapType="none" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cecfcf"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/lite_listrow_map"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+        <ke.co.eaglesafari.volley.RoundedCornerNetworkImageView
+            android:layout_width="60dip"
+            android:id="@+id/img_user"
+            android:src="@drawable/user"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="60dip" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="04/06 at 1:20 pm"
+            android:textSize="12dp"
+            android:textColor="#a19e9e"
+            android:id="@+id/txt_service"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_user"
+            android:layout_below="@+id/txt_name" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:text="Backey Jim"
+            android:textColor="#121111"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/txt_name"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_user"
+         />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="#121111"
+            android:textSize="18dp"
+            android:id="@+id/txt_amount"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/txt_service"
+            android:text="KES 2000.00"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="1dp"
+            android:textColor="#eae3e3"
+            android:textSize="13dp"
+            android:padding="0dp"
+            android:id="@+id/btn_proceed"
+            android:textStyle="bold"
+            android:background="@drawable/blackrounded"
+            android:layout_width="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/txt_service"
+            android:layout_below="@id/txt_amount"
+            android:text="Proceed >>"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

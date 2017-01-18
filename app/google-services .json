@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "988345205397",
+    "project_id": "maratravels-1047"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988345205397:android:905db0257d927fe5",
+        "android_client_info": {
+          "package_name": "com.safari.eagle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoXEZYAw5-gaDSb-EG6ExWEjC5KAvfCsQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988345205397:android:341bf89e369e1ced",
+        "android_client_info": {
+          "package_name": "com.eaglesafari.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoXEZYAw5-gaDSb-EG6ExWEjC5KAvfCsQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988345205397:android:7d9d30e6504a32ea",
+        "android_client_info": {
+          "package_name": "ke.co.eaglesafari"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoXEZYAw5-gaDSb-EG6ExWEjC5KAvfCsQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

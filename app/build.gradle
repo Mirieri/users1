@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "ke.co.eaglesafari"
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.2"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'joda-time:joda-time:2.7'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.google.android.gms:play-services-location:9.0.2'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.github.orangegangsters:swipy:1.2.3@aar'
+    compile 'com.google.android.gms:play-services-gcm:9.0.2'
+    compile 'com.google.android.gms:play-services-maps:9.0.2'
+}

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            tools:context="ke.co.eaglesafari.MainActivity">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+        </android.support.design.widget.AppBarLayout>
+        </android.support.design.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lightgreyline"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/txt_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:layout_gravity="left"
+                        android:text="Eagle Safari"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#FF000000" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/txt_receipt_no"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:text="RECEIPT NO"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="13dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dip"
+                            android:text="To:"
+                            android:layout_marginRight="2dp"
+
+                            android:textColor="#FF0A7E87"
+                            android:textSize="13dip"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+                        <TextView
+                            android:id="@+id/txt_name"
+                            android:text="Mr John Nyabera Moindi"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dip"
+                            android:layout_toRightOf="@+id/thumbnail"
+                            android:textColor="#FF000000"
+                            android:textSize="13dip"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/back"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:text="Item"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="13dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FF000000"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:text="Quantity"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="13dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FF000000"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:text="Price"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="13dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FF000000"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:text="Sub Total"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="13dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/list"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#AAC7CDCD"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Total"
+                    android:textColor="#FF000000"
+                    android:textSize="18dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+                <TextView
+                    android:id="@+id/txt_total"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="#FF000000"
+                    android:textSize="17dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+            <!-- Rightend Arrow -->
+            <TextView
+                android:id="@+id/txt_more_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:gravity="left"
+                android:textColor="#FF000000"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/txt_review"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:gravity="left"
+                android:textColor="#FF000000"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:typeface="sans" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_bar"
+                android:isIndicator="true"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_register_bg"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:text="Confirm"
+                android:textColor="#FFFFFFF0"
+                android:textSize="15dp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_grey_line_rounded"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="match_parent">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/lite_listrow_map"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:focusable="false"
+            android:clickable="false"
+           />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cecfcf"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/lite_listrow_map"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+            <ke.co.eaglesafari.volley.RoundedCornerNetworkImageView
+                android:layout_width="60dip"
+                android:id="@+id/img_user1"
+                android:src="@drawable/user"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="60dip" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:textColor="#a19e9e"
+                android:id="@+id/txt_service1"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_user1"
+                android:layout_below="@+id/txt_name1" />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:textColor="#121111"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/txt_name1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/img_user1"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:textColor="#121111"
+                android:textSize="18dp"
+                android:id="@+id/txt_amount1"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@id/txt_service1"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

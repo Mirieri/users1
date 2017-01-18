@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000033"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/create_an_account"
+            android:textColor="#FFFFFFFF" />
+        <TextView
+            android:id="@+id/txt_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/img_btn_bg_pressed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/error"
+            android:textColor="#FFF41111"
+            android:visibility="gone" />
+        <EditText
+            android:id="@+id/txt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_all_rounded"
+            android:hint="@string/full_name"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_all_rounded"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txt_telephone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_all_rounded"
+            android:hint="@string/telephone"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_all_rounded"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txt_confirmpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_all_rounded"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/select_date_of_birth"
+            android:textColor="#FFFFFFFF" />
+
+        <DatePicker
+            android:id="@+id/dt_dob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_grey_line_rounded"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_login_bg"
+            android:padding="5dp"
+            android:text="@string/register"
+            android:textColor="#FFFFFFF0"
+            android:textSize="15sp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_register_bg"
+            android:padding="5dp"
+            android:text="@string/to_login"
+            android:textColor="#FFFFFFF0"
+            android:textSize="15sp"
+            android:typeface="sans" />
+    </LinearLayout>
+</ScrollView>
